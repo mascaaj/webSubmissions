@@ -7,4 +7,7 @@ navbar:
       href: index.html
     - text: "Coursera Submission 1"
       href: Assignment1.html
-      
+output:
+  html_document:
+    theme: flatly
+    css: style.css

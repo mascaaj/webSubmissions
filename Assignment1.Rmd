@@ -3,9 +3,14 @@ title: " Coursera Data Products Course - Assignment 1 Submission"
 ---
 
 This submission is created in R markdown using Leaflet
+```{r, echo=FALSE}
+library(leaflet)
+```
 
-```{r}
-Sys.Date()
+#10th June 2018
 
-hist(mtcars$mpg)
+```{r, echo = FALSE}
+m <-leaflet() %>% 
+  setView(lng = -71.0589, lat = 42.3601, zoom = 12)
+m %>% addTiles() %>% addProviderTiles(providers$OpenStreetMap)
 ```
