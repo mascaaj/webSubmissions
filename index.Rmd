@@ -6,7 +6,9 @@ One stop shop for all web submissions for Coursera John Hopkins Data Products co
 
 ## [Assignment 1](https://mascaaj.github.io/webSubmissions/Assignment1.html)
 
-###Assignment Requirements :
+###Assignment Requirements - Leaflet:
 
--Does the web page feature a date and is this date less than two months before the date that you're grading this assignment?
--Does the web page feature an interactive map that appears to have been created with Leaflet?
+  - Does the web page feature a date and is this date less than two months before the date that you're grading this assignment?
+
+  - Does the web page feature an interactive map that appears to have been created with Leaflet?
+  
