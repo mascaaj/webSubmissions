@@ -12,10 +12,10 @@ library(leaflet)
 
 #10th June 2018
 
-A quick picture of home.
+A quick map of home.
 
 ```{r, echo = FALSE}
 m <-leaflet() %>% 
-  setView(lng = 74.1240, lat = 15.2993, zoom = 8)
+  setView(lng = 74.1240, lat = 15.2993, zoom = 7)
 m %>% addTiles() %>% addProviderTiles(providers$Esri.NatGeoWorldMap)
 ```
