@@ -1,0 +1,9 @@
+name: "submission-website"
+output_dir: "."
+navbar:
+  title: "Coursera Submission Website"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Hello World"
+      href: about.html
