@@ -1,5 +1,6 @@
 ---
-title: " Coursera Data Products Course - Assignment 1 Submission"
+title: "Coursera Data Products Course Assignment"
+subtitle: "Week 2 - Assignment 1 Submission - Leaflet"
 ---
 
 This submission is created in R markdown using Leaflet
@@ -15,6 +16,6 @@ A quick picture of home.
 
 ```{r, echo = FALSE}
 m <-leaflet() %>% 
-  setView(lng = 74.1240, lat = 15.2993, zoom = 10)
+  setView(lng = 74.1240, lat = 15.2993, zoom = 8)
 m %>% addTiles() %>% addProviderTiles(providers$Esri.NatGeoWorldMap)
 ```
