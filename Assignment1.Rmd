@@ -1,0 +1,11 @@
+---
+title: " Coursera Data Products Course - Assignment 1 Submission"
+---
+
+This submission is created in R markdown using Leaflet
+
+```{r}
+Sys.Date()
+
+hist(mtcars$mpg)
+```

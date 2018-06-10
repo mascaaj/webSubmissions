@@ -5,5 +5,6 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "Hello World"
-      href: about.html
+    - text: "Coursera Submission 1"
+      href: Assignment1.html
+      
