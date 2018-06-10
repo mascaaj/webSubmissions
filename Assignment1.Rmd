@@ -15,6 +15,6 @@ A quick picture of home.
 
 ```{r, echo = FALSE}
 m <-leaflet() %>% 
-  setView(lng = 15.2993, lat = 74.1240, zoom = 12)
+  setView(lng = 74.1240, lat = 15.2993, zoom = 10)
 m %>% addTiles() %>% addProviderTiles(providers$Esri.NatGeoWorldMap)
 ```
