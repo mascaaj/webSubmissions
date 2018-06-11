@@ -1,0 +1,42 @@
+---
+title: "Coursera Data Products Course Assignment"
+subtitle: "Week 3 - Assignment 2 Submission - Plotly"
+date: "June 10, 2018"
+output: 
+    ioslides_presentation:
+      widescreen: true
+      smaller: true
+---
+
+```{r,echo=FALSE}
+library(plotly)
+```
+## Purpose
+
+- The purpose of this assignment is to illustrate how R markdown can deliver output in presentation form.
+- It also illustrates how easy it is to integrate a plotly object into the presentation.
+- For this example, the swiss dataset has been selected.
+
+
+## Plotly analysis
+
+- In this slide we with inspect the swiss data set and try to establish how the population fertility is dependant on various social factors.
+- 4 dimensions are represented on this plot. fertility, Education, % Population Engaged in Agriculture & % Catholic
+
+```{r,warning=FALSE,message=FALSE,echo=FALSE}
+p <- plot_ly(swiss, x = ~Education, y = ~Fertility,
+             text = ~paste("%Education: ", Education, '<br>Fertility:', Fertility,'<br>% Agrarian:',Agriculture,'<br>% Catholic',Catholic),
+  marker = list(size = ~Agriculture/2,
+                       # color = 'rgba(150, 0, 150, .9)',
+                      color = ~Catholic,
+                       line = list(color = 'rgba(75, 0,75, .8)',
+                                   width = 2))) %>% 
+  layout(title = 'Fertility by province dependent on Education, <br>%Agrarian population (size) & % Catholic (color)',
+         yaxis = list(zeroline = FALSE),
+         xaxis = list(zeroline = FALSE))
+
+
+htmltools::tagList(list(p, p))
+```
+
+## Thank you

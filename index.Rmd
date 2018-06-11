@@ -12,3 +12,11 @@ One stop shop for all web submissions for Coursera John Hopkins Data Products co
 
   - Does the web page feature an interactive map that appears to have been created with Leaflet?
   
+  
+## [Assignment 2](https://mascaaj.github.io/webSubmissions/Assignment2.html)
+
+###Assignment Requirements - Plotly:  
+
+  - Does the web page feature a date and is this date less than two months before the date that you're grading this assignment?
+  
+  - Is the web page a presentation and does it feature an interactive plot that appears to have been created with Plotly?

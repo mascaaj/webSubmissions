@@ -7,6 +7,8 @@ navbar:
       href: index.html
     - text: "Coursera Submission 1"
       href: Assignment1.html
+    - text: "Coursera Submission 2"
+      href: Assignment2.html
 output:
   html_document:
     theme: flatly
