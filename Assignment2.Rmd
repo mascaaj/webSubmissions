@@ -39,4 +39,30 @@ p <- plot_ly(swiss, x = ~Education, y = ~Fertility,
 htmltools::tagList(list(p, p))
 ```
 
+## Model Fitting
+
+- We  fit a linear model for Fertility and Education to understand the trend of the data.
+
+```{r,warning=FALSE,message=FALSE,echo=FALSE}
+fit <- lm(Fertility~Education, data = swiss)
+
+
+p <- plot_ly(swiss, x = ~Education,y=~Fertility)%>% 
+add_markers(y = ~Fertility)%>%
+add_lines(x = ~Education, y = fitted(fit)) %>% 
+layout(title = "Linear Model : Fertility v/s Education", plot_bgcolor = "#e6e6e6",showlegend=FALSE)
+htmltools::tagList(list(p, p))
+```
+
+## Fit & Diagnostics
+
+- We can also check how good the fit is using fit standard residual diagnostics.
+
+```{r,warning=FALSE,message=FALSE,echo=FALSE}
+source('utilities.R')
+RegressionPlots(fit)
+
+```
+
+
 ## Thank you
